@@ -1,0 +1,4 @@
+services:
+  related_content.related_content_service:
+    class: Drupal\related_content\RelatedContentService
+    arguments: [ '@database', '@current_route_match' ]
