@@ -49,7 +49,6 @@ class RelatedContentBlock extends BlockBase implements ContainerFactoryPluginInt
    */
   public function build() {
     $all_results = $this->relatedcontentservice->getRelatedContents();
-    //dpm($all_results);
     $renderable = [
       '#theme' => 'related_content',
       '#data' => $all_results,
