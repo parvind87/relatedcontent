@@ -1,0 +1,6 @@
+name: offers
+type: module
+description: Offer entity
+core_version_requirement: ^9
+dependencies:
+  - drupal:views

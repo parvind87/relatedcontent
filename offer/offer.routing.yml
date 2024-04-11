@@ -1,0 +1,38 @@
+offer.add:
+ path: '/offers/create'
+ defaults:
+  _entity_form: offer.add
+  _title: 'Add offer'
+ requirements:
+  _entity_create_access: 'offer'
+
+entity.offer.edit_form:
+  path: '/offers/{offer}/edit'
+  defaults:
+   _entity_form: offer.edit
+   _title: 'Edit offer'
+  requirements:
+   _entity_access: 'offer.edit'
+
+entity.offer.delete_form:
+  path: '/offers/{offer}/delete'
+  defaults:
+   _entity_form: offer.delete
+   _title: 'Delete offer'
+  requirements:
+   _entity_access: 'offer.delete'
+
+entity.offer.canonical:
+  path: '/offer/{offer}'
+  defaults:
+   _entity_view: 'offer'
+   _title: 'Offer'
+  requirements:
+   _entity_access: 'offer.view'
+
+entity.offer.collection:
+ path: '/offers'
+ requirements:
+  _permission: 'administer own offers'
+
+

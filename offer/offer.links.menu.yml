@@ -1,0 +1,5 @@
+offer.toolbar.my_offers:
+ title: 'My offers'
+ route_name: entity.offer.collection
+ parent: system.admin
+ weight: 99
